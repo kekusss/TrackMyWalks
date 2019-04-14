@@ -1,0 +1,1 @@
+C:\Users\Kewin\source\repos\TrackMyWalks\TrackMyWalks\TrackMyWalks.UWP\TrackMyWalks.UWP.csproj;x86
