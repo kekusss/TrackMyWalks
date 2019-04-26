@@ -413,11 +413,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kewin\\source\\repos\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks.csproj",
+      "projectUniqueName": "C:\\Users\\Kewin\\source\\repos\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks.csproj",
       "projectName": "TrackMyWalks",
-      "projectPath": "C:\\Users\\Kewin\\source\\repos\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks.csproj",
+      "projectPath": "C:\\Users\\Kewin\\source\\repos\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks.csproj",
       "packagesPath": "C:\\Users\\Kewin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kewin\\source\\repos\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks\\obj\\",
+      "outputPath": "C:\\Users\\Kewin\\source\\repos\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

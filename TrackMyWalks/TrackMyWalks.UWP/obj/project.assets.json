@@ -8902,11 +8902,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kewin\\source\\repos\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks.UWP\\TrackMyWalks.UWP.csproj",
+      "projectUniqueName": "C:\\Users\\Kewin\\source\\repos\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks.UWP\\TrackMyWalks.UWP.csproj",
       "projectName": "TrackMyWalks.UWP",
-      "projectPath": "C:\\Users\\Kewin\\source\\repos\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks.UWP\\TrackMyWalks.UWP.csproj",
+      "projectPath": "C:\\Users\\Kewin\\source\\repos\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks.UWP\\TrackMyWalks.UWP.csproj",
       "packagesPath": "C:\\Users\\Kewin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kewin\\source\\repos\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks.UWP\\obj\\",
+      "outputPath": "C:\\Users\\Kewin\\source\\repos\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks.UWP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -8926,8 +8926,8 @@
       "frameworks": {
         "uap10.0.16299": {
           "projectReferences": {
-            "C:\\Users\\Kewin\\source\\repos\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks.csproj": {
-              "projectPath": "C:\\Users\\Kewin\\source\\repos\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks.csproj"
+            "C:\\Users\\Kewin\\source\\repos\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks.csproj": {
+              "projectPath": "C:\\Users\\Kewin\\source\\repos\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks.csproj"
             }
           }
         }

@@ -1163,11 +1163,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kewin\\source\\repos\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks.Android\\TrackMyWalks.Android.csproj",
+      "projectUniqueName": "C:\\Users\\Kewin\\source\\repos\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks.Android\\TrackMyWalks.Android.csproj",
       "projectName": "TrackMyWalks.Android",
-      "projectPath": "C:\\Users\\Kewin\\source\\repos\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks.Android\\TrackMyWalks.Android.csproj",
+      "projectPath": "C:\\Users\\Kewin\\source\\repos\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks.Android\\TrackMyWalks.Android.csproj",
       "packagesPath": "C:\\Users\\Kewin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kewin\\source\\repos\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks.Android\\obj\\",
+      "outputPath": "C:\\Users\\Kewin\\source\\repos\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -1184,8 +1184,8 @@
       "frameworks": {
         "monoandroid81": {
           "projectReferences": {
-            "C:\\Users\\Kewin\\source\\repos\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks.csproj": {
-              "projectPath": "C:\\Users\\Kewin\\source\\repos\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks.csproj"
+            "C:\\Users\\Kewin\\source\\repos\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks.csproj": {
+              "projectPath": "C:\\Users\\Kewin\\source\\repos\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks.csproj"
             }
           }
         }

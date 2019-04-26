@@ -832,11 +832,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kewin\\source\\repos\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks.iOS\\TrackMyWalks.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\Kewin\\source\\repos\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks.iOS\\TrackMyWalks.iOS.csproj",
       "projectName": "TrackMyWalks.iOS",
-      "projectPath": "C:\\Users\\Kewin\\source\\repos\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks.iOS\\TrackMyWalks.iOS.csproj",
+      "projectPath": "C:\\Users\\Kewin\\source\\repos\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks.iOS\\TrackMyWalks.iOS.csproj",
       "packagesPath": "C:\\Users\\Kewin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kewin\\source\\repos\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks.iOS\\obj\\",
+      "outputPath": "C:\\Users\\Kewin\\source\\repos\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
@@ -853,8 +853,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\Kewin\\source\\repos\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks.csproj": {
-              "projectPath": "C:\\Users\\Kewin\\source\\repos\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks.csproj"
+            "C:\\Users\\Kewin\\source\\repos\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks.csproj": {
+              "projectPath": "C:\\Users\\Kewin\\source\\repos\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks\\TrackMyWalks.csproj"
             }
           }
         }
