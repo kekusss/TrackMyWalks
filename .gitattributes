@@ -1,0 +1,3 @@
+TrackMyWalks/TrackMyWalks.Android/* linguist-vendored
+*.config linguist-language=C#
+*.xml linguist-language=C#
