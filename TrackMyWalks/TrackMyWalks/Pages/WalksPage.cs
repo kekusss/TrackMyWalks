@@ -6,26 +6,27 @@ using System.Text;
 using Xamarin.Forms;
 using TrackMyWalks.Models;
 using TrackMyWalks.ViewModels;
+using TrackMyWalks.Services;
 
 namespace TrackMyWalks.Pages
 {
 	public class WalksPage : ContentPage
 	{
+        WalksPageViewModel _viewModel {
+            get { return BindingContext as WalksPageViewModel; }
+        }
         public WalksPage()
         {
             var newWalkItem = new ToolbarItem
             {
                 Text = "Dodaj szlak"
             };
-            //Przejście do dodawania nowego szlaku
-            newWalkItem.Clicked += (sender, e) =>
-            {
-                Navigation.PushAsync(new WalkEntryPage());
-            };
+
+            newWalkItem.SetBinding(ToolbarItem.CommandProperty, "CreateNewWalk");
 
             ToolbarItems.Add(newWalkItem);
 
-            BindingContext = new WalksPageViewModel();
+            BindingContext = new WalksPageViewModel(DependencyService.Get<IWalkNavService>());
             //definicja szablonu elementu
             var itemTemplate = new DataTemplate(typeof(ImageCell));
             itemTemplate.SetBinding(TextCell.TextProperty, "Title");
@@ -46,12 +47,20 @@ namespace TrackMyWalks.Pages
             {
                 var item = (WalkEntries)e.Item;
                 if (item == null) return;
-                Navigation.PushAsync(new WalkTrailPage(item));
+                _viewModel.WalkTrailDetails.Execute(item);
                 item = null;
             };
 
             //dodanie stworzonej zawartości do strony
             Content = walksList;
-		}
+        }
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing(); // inicjalizacja modelu WalksPageViewModel
+            if(_viewModel != null)
+            {
+                await _viewModel.Init();
+            }
+        }
 	}
 }

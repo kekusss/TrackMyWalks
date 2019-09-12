@@ -6,14 +6,22 @@ using System.Text;
 using Xamarin.Forms;
 using Xamarin.Forms.Maps;
 using TrackMyWalks.Models;
+using TrackMyWalks.ViewModels;
 
 namespace TrackMyWalks.Pages
 {
     public class DistanceTravelledPage : ContentPage
     {
+        DistTravelledViewModel _viewModel
+        {
+            get { return BindingContext as DistTravelledViewModel; }
+        }
         public DistanceTravelledPage(WalkEntries walkItem)
         {
             Title = "Przebyty dystans";
+
+            //deklaracja i inicjalizacja kontekstu wiązania modelu
+            BindingContext = new DistTravelledViewModel(walkItem);
 
             //tworzenie obiektu mapy
 
@@ -22,51 +30,39 @@ namespace TrackMyWalks.Pages
             trailMap.Pins.Add(new Pin
             {
                 Type = PinType.Place,
-                Label = walkItem.Title,
-                Position = new Position(walkItem.Latitude, walkItem.Longitude),
+                Label = _viewModel.WalkEntry.Title,
+                Position = new Position(_viewModel.WalkEntry.Latitude, _viewModel.WalkEntry.Longitude),
             });
             //Wyśrodkowanie mapy na początku szlaku / szpilce
-            trailMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(walkItem.Latitude, walkItem.Longitude), Distance.FromKilometers(1.0)));
+            trailMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(_viewModel.WalkEntry.Latitude, _viewModel.WalkEntry.Longitude), Distance.FromKilometers(1.0)));
 
             var trailNameLabel = new Label()
             {
                 FontSize = 18,
                 FontAttributes = FontAttributes.Bold,
                 TextColor = Color.Black,
-                Text = walkItem.Title
+                HorizontalTextAlignment = TextAlignment.Center
             };
+            trailNameLabel.SetBinding(Label.TextProperty, "WalkEntry.Title");
+
             var TrailDistanceTravelledLabel = new Label()
             {
                 FontSize = 20,
                 FontAttributes = FontAttributes.Bold,
                 TextColor = Color.Black,
-                Text = "Przebyty dystans",
                 HorizontalTextAlignment = TextAlignment.Center
             };
-            var totalDistanceTaken = new Label()
-            {
-                FontSize = 20,
-                FontAttributes = FontAttributes.Bold,
-                TextColor = Color.Black,
-                Text = $"{ walkItem.Distance }",
-                HorizontalTextAlignment = TextAlignment.Center
-            };
+            TrailDistanceTravelledLabel.SetBinding(Label.TextProperty, "Travelled", stringFormat: "Przebyty dystans: {0} km");
+
             var totalTimeTakenLabel = new Label()
             {
                 FontSize = 20,
                 FontAttributes = FontAttributes.Bold,
                 TextColor = Color.Black,
-                Text = "Czas",
                 HorizontalTextAlignment = TextAlignment.Center
             };
-            var totalTimeTaken = new Label()
-            {
-                FontSize = 20,
-                FontAttributes = FontAttributes.Bold,
-                TextColor = Color.Black,
-                Text = "0 h 0 m 0 s",
-                HorizontalTextAlignment = TextAlignment.Center
-            };
+            totalTimeTakenLabel.SetBinding(Label.TextProperty, "TimeTaken", stringFormat: "Czas: {0}");
+
             //przycisk
             var walksHomeButton = new Button()
             {
@@ -95,9 +91,7 @@ namespace TrackMyWalks.Pages
                         trailMap,
                         trailNameLabel,
                         TrailDistanceTravelledLabel,
-                        totalDistanceTaken,
                         totalTimeTakenLabel,
-                        totalTimeTaken,
                         walksHomeButton
                     }
                 }

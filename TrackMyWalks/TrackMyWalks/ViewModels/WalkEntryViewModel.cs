@@ -4,6 +4,9 @@ using System.Text;
 using Xamarin.Forms;
 using TrackMyWalks.Models;
 using TrackMyWalks.ViewModels;
+using System.Diagnostics.Contracts;
+using System.Threading.Tasks;
+using TrackMyWalks.Services;
 
 namespace TrackMyWalks.ViewModels
 {
@@ -12,7 +15,7 @@ namespace TrackMyWalks.ViewModels
         string _title;
         public string Title
         {
-            get { return Title;}
+            get { return _title;}
             set { _title = value;
                 OnPropertyChanged();
                 SaveCommand.ChangeCanExecute();
@@ -96,9 +99,9 @@ namespace TrackMyWalks.ViewModels
         }
 
         //konstruktor przypisujący wartości domyślne dla pół
-        public WalkEntryViewModel()
+        public WalkEntryViewModel(IWalkNavService navService) : base(navService)
         {
-            Title = "Tytuł szlaku";
+            Title = "Nowy szlak";
             Difficulty = "Niski";
             Distance = 1.0;
         }
@@ -108,11 +111,11 @@ namespace TrackMyWalks.ViewModels
         {
             get
             {
-                return _saveCommand ?? (_saveCommand = new Command(ExecuteSaveCommand, ValidateFormDetails));
+                return _saveCommand ?? (_saveCommand = new Command(async () => await ExecuteSaveCommand(), ValidateFormDetails));
             }
         }
 
-        void ExecuteSaveCommand()
+        async Task ExecuteSaveCommand()
         {
             var newWalkItem = new WalkEntries
             {
@@ -125,11 +128,24 @@ namespace TrackMyWalks.ViewModels
                 Distance = this.Distance,
                 ImageUrl = this.ImageUrl
             };
+
+            //tu będzie kod zapisujący dane
+            await NavService.PreviousPage();
         }
         // metoda sprawdzająca błędy w formularzu
         bool ValidateFormDetails()
         {
             return !string.IsNullOrWhiteSpace(Title);
+        }
+
+        public override async Task Init()
+        {
+            await Task.Factory.StartNew(() =>
+            {
+                Title = "Nowy szlak";
+                Difficulty = "Niski";
+                Distance = 1.0;
+            });
         }
     }
 }

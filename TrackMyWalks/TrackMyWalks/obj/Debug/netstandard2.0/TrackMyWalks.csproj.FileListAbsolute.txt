@@ -10,3 +10,15 @@ C:\Users\Kewin\source\repos\TrackMyWalks\TrackMyWalks\TrackMyWalks\obj\Debug\net
 C:\Users\Kewin\source\repos\TrackMyWalks\TrackMyWalks\TrackMyWalks\obj\Debug\netstandard2.0\TrackMyWalks.dll
 C:\Users\Kewin\source\repos\TrackMyWalks\TrackMyWalks\TrackMyWalks\obj\Debug\netstandard2.0\TrackMyWalks.pdb
 C:\Users\Kewin\source\repos\TrackMyWalks\TrackMyWalks\TrackMyWalks\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Kewin\source\repos\TrackMyWalks\TrackMyWalks\TrackMyWalks\TrackMyWalks\bin\Debug\netstandard2.0\TrackMyWalks.deps.json
+C:\Users\Kewin\source\repos\TrackMyWalks\TrackMyWalks\TrackMyWalks\TrackMyWalks\bin\Debug\netstandard2.0\TrackMyWalks.dll
+C:\Users\Kewin\source\repos\TrackMyWalks\TrackMyWalks\TrackMyWalks\TrackMyWalks\bin\Debug\netstandard2.0\TrackMyWalks.pdb
+C:\Users\Kewin\source\repos\TrackMyWalks\TrackMyWalks\TrackMyWalks\TrackMyWalks\obj\Debug\netstandard2.0\TrackMyWalks.csprojAssemblyReference.cache
+C:\Users\Kewin\source\repos\TrackMyWalks\TrackMyWalks\TrackMyWalks\TrackMyWalks\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Kewin\source\repos\TrackMyWalks\TrackMyWalks\TrackMyWalks\TrackMyWalks\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Kewin\source\repos\TrackMyWalks\TrackMyWalks\TrackMyWalks\TrackMyWalks\obj\Debug\netstandard2.0\TrackMyWalks.csproj.CoreCompileInputs.cache
+C:\Users\Kewin\source\repos\TrackMyWalks\TrackMyWalks\TrackMyWalks\TrackMyWalks\obj\Debug\netstandard2.0\TrackMyWalks.AssemblyInfoInputs.cache
+C:\Users\Kewin\source\repos\TrackMyWalks\TrackMyWalks\TrackMyWalks\TrackMyWalks\obj\Debug\netstandard2.0\TrackMyWalks.AssemblyInfo.cs
+C:\Users\Kewin\source\repos\TrackMyWalks\TrackMyWalks\TrackMyWalks\TrackMyWalks\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Kewin\source\repos\TrackMyWalks\TrackMyWalks\TrackMyWalks\TrackMyWalks\obj\Debug\netstandard2.0\TrackMyWalks.dll
+C:\Users\Kewin\source\repos\TrackMyWalks\TrackMyWalks\TrackMyWalks\TrackMyWalks\obj\Debug\netstandard2.0\TrackMyWalks.pdb
